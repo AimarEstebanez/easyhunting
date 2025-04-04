@@ -196,7 +196,7 @@ demo malware hash: `c9de316342aff789e9dcd725b893f48256f381c936ba19a7ccd9336e1ed9
 ### ESP
 Easy hunting es una herramienta para facilitar el dia a dia de un "threat hunter" o analista de malware.
 
-> [!Atencion]
+> [!IMPORTANT]
 > easyHunting NO sube informacion sobre las muestras a internet
 
 ... añadir resto de README en castellano
