@@ -1,8 +1,12 @@
 # easyhunting
 
+### ENG
 This tool tries to facilitate the day to day of a threat hunter or malware analyst.
 
 <span style="color:red">Important! easyhunting **does not upload** any info or samples to internet.</span>
+
+## Forked from:
+[ppt0/easyHunting](https://github.com/ppt0/easyhunting)
 
 Features:
 * Get ***a simple file report***. It includes peid signature, similarity-based hashes, sections overview, signature, [malapi](https://malapi.io/) matches and intelligence sources hits.
@@ -186,3 +190,13 @@ demo malware hash: `c9de316342aff789e9dcd725b893f48256f381c936ba19a7ccd9336e1ed9
 
 -d <hash>, --download <hash> -> download file from the wild
  ![Alt text](demo/download.PNG?raw=true "Title")
+
+
+---
+### ESP
+Easy hunting es una herramienta para facilitar el dia a dia de un "threat hunter" o analista de malware.
+
+> [!Atencion]
+> easyHunting NO sube informacion sobre las muestras a internet
+
+... añadir resto de README en castellano
