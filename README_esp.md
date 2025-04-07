@@ -32,10 +32,10 @@ Easy hunting es una herramienta para facilitar el dia a dia de un "threat hunter
 * Consultas a Virustotal para mejorar la busqueda de similares ([documentación](https://support.virustotal.com/hc/en-us/articles/360001385897-File-search-modifiers)). **NOTA**: Es necesaria una PRO api key.
 * Muestra el malware mas reciente buscando con etiquetas.
 * Descarga muestras de fuentes de inteligencia.
----
+
 >[!IMPORTANT]
 > Fuentes de inteligencia disponibles: *virustotal, bazaar, urlhaus, threatfox, alienvault, triage* y *tweetfeed*
-
+---
 ### INSTALACION
 1. Instala Python 3.13.2
 2. Clona el repositorio

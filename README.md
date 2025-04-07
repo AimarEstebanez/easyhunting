@@ -23,14 +23,13 @@ Features:
     - *have* highlights the interesting info (for me again) in a fast way
     - *ttps* shows mitre-based techniques used by the sample
     - *link* to full report
-* ***Virustotal Intelligence Queries*** to improve the similar file search ([documentation](https://support.virustotal.com/hc/en-us/articles/360001385897-File-search-modifiers)). **NOTE**:> PRO api key is required.
+* ***Virustotal Intelligence Queries*** to improve the similar file search ([documentation](https://support.virustotal.com/hc/en-us/articles/360001385897-File-search-modifiers)). **NOTE**: PRO api key is required.
 * ***See the latest malware*** in the wild searching with tags.
 * ***Download samples*** from intel sources. The samples are downloaded in "downloaded_samples" folder.
----
 
 >[!IMPORTANT]
 > Available intelligence sources: *virustotal, bazaar, urlhaus, threatfox, alienvault, triage* AND *tweetfeed*
-
+---
 
 ***To-do***
 * Get threat info from intel sources in a bulk process (file with a ioc in each row) with json output.
