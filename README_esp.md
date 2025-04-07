@@ -22,22 +22,18 @@ Easy hunting es una herramienta para facilitar el dia a dia de un "threat hunter
 * Obtiene reglas **yara**, **sigma** e **ids** desde un repositorio arbitrario (ejemplo. [este repo](https://github.com/Yara-Rules/rules)) y fuentes de inteligencia.
 * Obtiene tecnicas MITRE utilizadas por la muestra. 
 * Con las tecnicas MITRE obtenidas de diferentes fuentes de inteligenca se crea un JSON en  "mitre_navigator_reports" para importarlo en el framework de ataques MITRE.
-* Obtiene **Muestras potencialmente similares** utilizando hash-es basados en similitud como; imphash, ssdeep, tlsh e icon shash. Ademas de otras caracteristicas como tamaño y metadatos.
->[!NOTE]
-> Los hashes tlsh y ssdeep no estan disponibles para sistemas Windows.
+* Obtiene **Muestras potencialmente similares** utilizando hash-es basados en similitud como; imphash, ssdeep, tlsh e icon shash. Ademas de otras caracteristicas como tamaño y metadatos. **NOTE**: Los hashes tlsh y ssdeep no estan disponibles para sistemas Windows.
 * Obtiene informacion de amenazas sobre archivos, IPs, Dominios y URLs.
     - Informacion basica
     - Etiquetas de fuentes de inteligencia
     - Información relevante / interesante
     - ttps muestra tecnicas MITRE utilizadas en las muestras
     - Enclace a un informe completo
-* Consultas a Virustotal para mejorar la busqueda de similares ([documentación](https://support.virustotal.com/hc/en-us/articles/360001385897-File-search-modifiers)).
->[!NOTE]
-> Es necesaria una PRO api key.
+* Consultas a Virustotal para mejorar la busqueda de similares ([documentación](https://support.virustotal.com/hc/en-us/articles/360001385897-File-search-modifiers)). **NOTA**: Es necesaria una PRO api key.
 * Muestra el malware mas reciente buscando con etiquetas.
 * Descarga muestras de fuentes de inteligencia.
-
->[IMPORTANT]
+---
+>[!IMPORTANT]
 > Fuentes de inteligencia disponibles: *virustotal, bazaar, urlhaus, threatfox, alienvault, triage* y *tweetfeed*
 
 ### INSTALACION
