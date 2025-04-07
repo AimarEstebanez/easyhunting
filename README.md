@@ -1,30 +1,40 @@
 # easyhunting
 
-### ENG
 This tool tries to facilitate the day to day of a threat hunter or malware analyst.
 
-<span style="color:red">Important! easyhunting **does not upload** any info or samples to internet.</span>
+> [!IMPORTANT]
+> easyHunting **DOES NOT UPLOAD** any info or samples to internet
+
 
 ## Forked from:
 [ppt0/easyHunting](https://github.com/ppt0/easyhunting)
 
+---
+## Features:
 Features:
 * Get ***a simple file report***. It includes peid signature, similarity-based hashes, sections overview, signature, [malapi](https://malapi.io/) matches and intelligence sources hits.
 * The ***disassembly of the first bytes*** to identify in a fast way if pe file has a non-common ep like packer or file infector or if the hex chunk is a shellcode. If you want to disassemble a shellcode, you have to choose the architecture (sc to x86 and sc64 to x64)
 * Get ***yara, sigma and ids rules*** of a sample from an arbitrary yara rule repository (e.g. [this repo](https://github.com/Yara-Rules/rules)) and intelligence sources.
 * Get ***mitre attack techniques*** used by a sample. Techniques are obtained via triage, alienvault, virustotal and capa. Also, a json file is created in "mitre_navigator_reports" folder to import in mitre attack [navigator](https://mitre-attack.github.io/attack-navigator/) framework.
-* Get ***potencial similar files*** using similarity-based hashes such as imphash, ssdeep, tlsh and icon dhash, and other features like signature, similar size and similar metadata. Note: ssdeep and tlsh hashes are not available in windows system.
+* Get ***potencial similar files*** using similarity-based hashes such as imphash, ssdeep, tlsh and icon dhash, and other features like signature, similar size and similar metadata. 
+>[!NOTE]
+>ssdeep and tlsh hashes are not available in windows system.
 * Get ***threat intel information about file, ip, domain and url*** from intel sources. It does not pretend to show a extended report,  but rather get the most the most important info (for me) with a tag model presenting the following structure:
     - *basic information* about the sample
     - *tags* extracted from intel sources
     - *have* highlights the interesting info (for me again) in a fast way
     - *ttps* shows mitre-based techniques used by the sample
     - *link* to full report
-* ***Virustotal Intelligence Queries*** to improve the similar file search ([documentation](https://support.virustotal.com/hc/en-us/articles/360001385897-File-search-modifiers)). Note: pro api key is required!
+* ***Virustotal Intelligence Queries*** to improve the similar file search ([documentation](https://support.virustotal.com/hc/en-us/articles/360001385897-File-search-modifiers)).
+>[!NOTE]
+> PRO api key is required.
 * ***See the latest malware*** in the wild searching with tags.
 * ***Download samples*** from intel sources. The samples are downloaded in "downloaded_samples" folder.
 
-***Intel sources available!***: *virustotal, bazaar, urlhaus, threatfox, alienvault, triage* and *tweetfeed*. You just need api key for virustotal and triage.
+
+>[IMPORTANT]
+> Available intelligence sources: *virustotal, bazaar, urlhaus, threatfox, alienvault, triage* AND *tweetfeed*
+
 
 ***To-do***
 * Get threat info from intel sources in a bulk process (file with a ioc in each row) with json output.
@@ -60,7 +70,8 @@ vtintelligence = 15
 ```
 
 Limits indicate the number of results in each request. For instance, with tags = 10, the tool will only show the last 10 malware in each intel source with that tag. 
-Note: take care with high value in "similar", since it could take a long time.
+>[!NOTE]
+>Take care with high value in "similar", since it could take a long time.
 
 #### **Capa 3.2.0 integration**
 1. Download the latest release (version 3.2.0) from [capa](https://github.com/mandiant/capa/archive/refs/tags/v3.2.0.zip) repo.
@@ -190,13 +201,3 @@ demo malware hash: `c9de316342aff789e9dcd725b893f48256f381c936ba19a7ccd9336e1ed9
 
 -d <hash>, --download <hash> -> download file from the wild
  ![Alt text](demo/download.PNG?raw=true "Title")
-
-
----
-### ESP
-Easy hunting es una herramienta para facilitar el dia a dia de un "threat hunter" o analista de malware.
-
-> [!IMPORTANT]
-> easyHunting NO sube informacion sobre las muestras a internet
-
-... añadir resto de README en castellano
